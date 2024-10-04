@@ -10,7 +10,7 @@ body {
   align-items: center;
 }
 
-.container-title{
+.container-title {
   margin-bottom: 15px;
 }
 
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   padding: 0;
   list-style: none;
-  width: 100%; 
+  width: 100%;
 }
 
 .container-info li {
@@ -47,17 +47,29 @@ body {
   width: 1px; 
   height: 70px; 
   background-color: black; 
-  margin-right: 90px;
+  margin-right: 20px; /* Reduced margin for better alignment */
+  position: relative; /* Make the line the reference point for the circle */
+}
+
+/* Dot as a span */
+.dot {
+  display: block; /* Ensure it behaves as a block */
+  width: 10px; /* Dot diameter */
+  height: 10px; /* Dot diameter */
+  background: #000000; /* Dot color */
+  border-radius: 50%; /* Make it a dot */
+  position: absolute; /* Position it absolutely */
+  top: 100%; /* Position it directly below the line */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, 0); /* Centering adjustment */
 }
 
 /* Button */
-
-button{
+button {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
-  border: 20px;
+  border: none; /* Changed to none for cleaner button */
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
 }
-
