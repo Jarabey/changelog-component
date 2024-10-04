@@ -47,28 +47,28 @@ body {
   width: 1px; 
   height: 70px; 
   background-color: black; 
-  margin-right: 20px; /* Reduced margin for better alignment */
-  position: relative; /* Make the line the reference point for the circle */
+  margin-right: 20px;
+  position: relative; 
 }
 
 /* Dot as a span */
 .dot {
-  display: block; /* Ensure it behaves as a block */
-  width: 10px; /* Dot diameter */
-  height: 10px; /* Dot diameter */
-  background: #000000; /* Dot color */
-  border-radius: 50%; /* Make it a dot */
-  position: absolute; /* Position it absolutely */
-  top: 100%; /* Position it directly below the line */
-  left: 50%; /* Center it horizontally */
-  transform: translate(-50%, 0); /* Centering adjustment */
+  display: block; 
+  width: 10px; 
+  height: 10px;
+  background: #000000;
+  border-radius: 50%;
+  position: absolute; 
+  top: 100%; 
+  left: 50%;
+  transform: translate(-50%, 0); 
 }
 
 /* Button */
 button {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
-  border: none; /* Changed to none for cleaner button */
+  border: none; 
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
